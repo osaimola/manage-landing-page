@@ -30,10 +30,6 @@ a:hover {
   display: none;
 }
 
-.nav button:hover {
-  background-color: #f0ab8c;
-}
-
 .nav-toggle {
   background-color: transparent;
   height: 24px;
@@ -43,9 +39,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding: 24px 12px;
+  border-radius: 6px;
   background-color: white;
-  -webkit-box-shadow: 0px 280px 50px 200px rgba(117, 117, 117, 0.22);
-  box-shadow: 0px 280px 50px 200px rgba(117, 117, 117, 0.22);
+  -webkit-box-shadow: 0px 350px 50px 250px rgba(117, 117, 117, 0.4);
+  box-shadow: 0px 350px 50px 250px rgba(117, 117, 117, 0.4);
+}
+
+.nav-floating-links a {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -66,6 +68,9 @@ a:hover {
 
   .nav-get-started {
     display: block;
+  }
+
+  .nav button {
     border-radius: 20px;
     padding: 8px 18px;
     background-color: #eb733c;
@@ -73,6 +78,10 @@ a:hover {
     color: #fafafa;
     font-weight: 700;
     margin-left: 56px;
+  }
+
+  .nav button:hover {
+    background-color: #f0ab8c;
   }
 
   .nav-toggle {

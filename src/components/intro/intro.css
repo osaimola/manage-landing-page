@@ -27,6 +27,10 @@
   font-weight: 700;
 }
 
+.intro-text button:hover {
+  background-color: #f0ab8c;
+}
+
 .intro-stats img {
   width: 100%;
   height: auto;

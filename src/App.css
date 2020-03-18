@@ -11,7 +11,7 @@ body {
   margin-right: 5%;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 1025px) {
   body {
     background-image: url(./images/bg-simplify-desktop-top.svg);
     background-repeat: no-repeat;

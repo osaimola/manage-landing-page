@@ -1,0 +1,29 @@
+.review {
+  max-width: 500px;
+  background-color: #fafafa;
+  padding-bottom: 16px;
+  margin-top: 65px;
+  border-radius: 2px;
+}
+
+.review-image {
+  position: relative;
+  top: -41px;
+}
+
+.review-image img {
+  width: 82px;
+  height: auto;
+}
+
+.review-content h3 {
+  color: #242d52;
+  margin-top: 0px;
+}
+
+.review-content p {
+  color: #9095a7;
+  text-align: center;
+  font-size: 16px;
+  padding: 0px 24px;
+}

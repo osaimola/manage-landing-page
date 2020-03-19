@@ -1,0 +1,94 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+
+.content-main {
+  text-align: center;
+}
+
+.content-main h2 {
+  font-size: 28px;
+  color: #242d52;
+  font-weight: 700;
+  max-width: 300px;
+  margin: 0px auto 16px auto;
+}
+
+.content-main p {
+  font-size: 14px;
+  color: #9095a7;
+  max-width: 300px;
+  margin: auto;
+}
+
+.content-points {
+  margin-top: 48px;
+  margin-left: 5%;
+}
+
+.point {
+  color: #242d52;
+  margin-bottom: 32px;
+}
+
+.point-head span {
+  font-weight: 900;
+  text-align: center;
+  padding: 6px 18px 6px 18px;
+  margin-right: 8px;
+  border-radius: 24px;
+  color: #fafafa;
+  background-color: #eb733c;
+}
+
+.point-head {
+  padding: 6px 18px 6px 0px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  background-color: #f2dfce;
+}
+
+.point p {
+  font-size: 14px;
+  color: #9095a7;
+  max-width: 350px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .content {
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .content-main {
+    text-align: left;
+  }
+
+  .content-main h2 {
+    max-width: 400px;
+    margin-left: 0px;
+  }
+
+  .content-main p {
+    max-width: 280px;
+    margin-left: 3px;
+  }
+
+  .content-points {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .point-head {
+    background-color: unset;
+  }
+
+  .point p {
+    margin-left: 61.8px;
+    max-width: 400px;
+  }
+}

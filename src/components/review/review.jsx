@@ -94,7 +94,7 @@ function handleArrowClick(action, hookValue, setHook) {
   }
 }
 
-function Review(props) {
+function Review() {
   const [currentReview, setCurrentReview] = useState(0);
 
   return (

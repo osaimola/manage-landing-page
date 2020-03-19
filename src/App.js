@@ -5,6 +5,7 @@ import Intro from "./components/intro/intro";
 import Banner from "./components/banner/banner";
 import Footer from "./components/footer/footer";
 import Review from "./components/review/review";
+import Content from "./components/content/content";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <Intro />
       </div>
+      <Content />
       <Review />
       <Banner />
       <Footer />

@@ -51,11 +51,12 @@ function Navbar() {
   return (
     <React.Fragment>
       <div className="nav">
-        <img alt="" src={logo} />
+        <img alt="manage" src={logo} />
         <div className="nav-links">{renderLinks()}</div>
         <button className="nav-get-started">Get Started</button>
 
         <img
+          alt="toggle nav"
           src={renderMenuIcon(iconState)}
           className="nav-toggle"
           onClick={() => {

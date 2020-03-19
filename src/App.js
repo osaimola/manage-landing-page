@@ -12,8 +12,8 @@ function App() {
       <div className="App">
         <Navbar />
         <Intro />
-        <Review />
       </div>
+      <Review />
       <Banner />
       <Footer />
     </React.Fragment>

@@ -1,5 +1,7 @@
 Responsive landing page with email validation from the [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5)
 
+See Demo [here](https://osaimola.github.io/manage)
+
 # Front-end Style Guide
 
 ## Layout

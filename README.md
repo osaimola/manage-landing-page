@@ -1,4 +1,4 @@
-Responsive landing page with email validion from the [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5)
+Responsive landing page with email validation from the [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5)
 
 # Front-end Style Guide
 

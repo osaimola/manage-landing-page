@@ -8,17 +8,21 @@ import twitter from "../../images/icon-twitter.svg";
 import youtube from "../../images/icon-youtube.svg";
 
 // update hook from form input
-function handleNewsletterChange(formInput, sethook) {
-  sethook(formInput);
+function handleNewsletterChange(formInput, setInputHook, setSignUpHook) {
+  setInputHook(formInput);
+  setSignUpHook("");
 }
 
-// respond to a submit click
-function handleSubmit(formValue) {
-  alert("Thanks for signing up " + formValue + "!");
+// confirm if email is valid on click
+function handleSubmit(formValue, setHook) {
+  const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (formValue.match(emailRegex)) setHook("success");
+  else setHook("failed");
 }
 
 function Footer() {
   const [newsletterFormInput, setNewsletterFormInput] = useState("");
+  const [signUpStatus, setSignUpStatus] = useState("");
 
   return (
     <React.Fragment>
@@ -53,16 +57,22 @@ function Footer() {
         </div>
 
         <div className="newsletter">
-          <div className="newsletter-input">
+          <div className={"newsletter-input " + signUpStatus}>
             <input
               placeholder="Get the latest updates..."
               onChange={e => {
-                handleNewsletterChange(e.target.value, setNewsletterFormInput);
+                handleNewsletterChange(
+                  e.target.value,
+                  setNewsletterFormInput,
+                  setSignUpStatus
+                );
               }}
             ></input>
           </div>
           <div className="newsletter-submit">
-            <button onClick={() => handleSubmit(newsletterFormInput)}>
+            <button
+              onClick={() => handleSubmit(newsletterFormInput, setSignUpStatus)}
+            >
               Sign Up
             </button>
           </div>

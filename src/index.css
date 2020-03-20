@@ -9,6 +9,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 code {
   font-family: "Be Vietnam", sans-serif;
 }
@@ -17,7 +25,6 @@ code {
   body {
     background-image: url(./images/bg-simplify-desktop-top.svg);
     background-repeat: no-repeat;
-    background-attachment: local;
     background-size: cover;
   }
 }

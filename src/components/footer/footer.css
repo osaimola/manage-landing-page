@@ -3,7 +3,6 @@
   flex-direction: column-reverse;
   background-color: #242d52;
   padding: 24px 5%;
-
   color: #fafafa;
 }
 
@@ -85,9 +84,20 @@
 
 .newsletter-input input {
   border-style: none;
+  font-weight: 600;
   padding: 12px 18px;
   border-radius: 20px;
   margin-right: 12px;
+}
+
+.failed input {
+  color: red;
+  background-color: rgb(255, 233, 233);
+}
+
+.success input {
+  color: green;
+  background-color: rgb(233, 252, 233);
 }
 
 .newsletter-submit button {
@@ -107,7 +117,7 @@
   .footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 42px 10%;
+    padding: 64px 10%;
   }
 
   .brand {

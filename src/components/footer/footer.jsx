@@ -59,6 +59,7 @@ function Footer() {
         <div className="newsletter">
           <div className={"newsletter-input " + signUpStatus}>
             <input
+              name="email"
               placeholder="Get the latest updates..."
               onChange={e => {
                 handleNewsletterChange(

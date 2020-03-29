@@ -74,7 +74,12 @@ function renderSliderPosition(hookValue) {
   const sliderLength = reviews.length - 1;
   const x = [];
   for (let i = 0; i <= sliderLength; i++) {
-    x.push(<span className={i === hookValue ? "active-span" : ""}></span>);
+    x.push(
+      <span
+        key={i.toString()}
+        className={i === hookValue ? "active-span" : ""}
+      ></span>
+    );
   }
   return x;
 }
